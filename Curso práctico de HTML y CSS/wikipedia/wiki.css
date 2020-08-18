@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 100%;
+    font-family: 'Linux Libertine',Georgia,Times,serif;
+}
+
+header{
+    margin: 50px;
+}
+
+header .titulo,
+header .Wikipedia{
+    display: flex;
+    justify-content: center;
+}
+
+header .Wikipedia img{
+    width: 190px;
+    margin-bottom: 10px;
+}
+
+header .titulo h1{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.centro img{
+    width: 240px;
+    margin-top: 40px;
+}
+
+li{
+    list-style: none;
+}
+
+.izquierda ul,
+.derecha ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.izquierda ul div li,
+.derecha ul div li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.artis{
+    font-size: 13px;
+    color: gray;
+    font-weight: lighter;
+}
+
+.izquierda ul div,
+.derecha ul div{
+    margin-bottom: 30px;
+}
+
+ul{
+    margin: 0 -30px;
+    width: 500px;
+}
+
+#espanol,
+#portugues{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#english,
+#polaco{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#japones{
+    margin-left: 220px;
+}
+
+#aleman{
+    margin-right: 220px;
+}
+
+#ruso{
+    margin-left: 215px;
+}
+
+#frances{
+    margin-right: 215px;
+}
+
+#italiano{
+    margin-left: 250px;
+}
+
+#chino{
+    margin-right: 250px;
+}
+
+section input[type="image"]{
+    width: 40px;
+    background-color: #1d67b1;
+    border: 1px solid #1d67b1;
+}
+
+section input[type="image"]:hover{
+    background-color: dodgerblue;
+}
+
+section input[type="search"]{
+    height: 40px;
+    width: 400px;
+    border: 1px gray solid;
+}
+
+section input[type="search"]:focus{
+    border: 3px solid dodgerblue;
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

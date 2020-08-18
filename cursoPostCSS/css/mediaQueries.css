@@ -1,0 +1,16 @@
+@custom-media --extra-small (width < 480px);
+@custom-media --small screen and (width < 768px);
+@custom-media --medium (width >= 768px);
+@custom-media --large (width >= 1024px);
+
+@media (--small) {
+  body {
+    border: 10px solid green;
+  }
+}
+
+@media (--extra-small) {
+  body {
+    border: 10px solid orange;
+  }
+}

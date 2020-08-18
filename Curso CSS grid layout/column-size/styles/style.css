@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px; /*filas,columnas*/
+    height: 100vh; /*view port heigth*/
+}
+
+.item{
+    border: 1px red solid;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.item:nth-of-type(1){
+    background-color: lightgreen;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item:nth-of-type(8){
+    /*grid-column: 1 / span 2;*/
+    grid-column: 1 / -1; /*!Con -1 ocupará todas el tamaño ancho (es donde termina)*/
+}
+
+.item:nth-of-type(7){
+    grid-column: 2/4;
+}

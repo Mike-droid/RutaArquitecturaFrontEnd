@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li img{
+    width: 30px;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul{
+    list-style: none;
+    margin-right: 3%;
+}
+
+nav ul li{
+    margin-left: 2%;
+}
+
+#yo{
+    border-radius: 50%;
+}
+
+li a{
+    text-decoration: none;
+    color: #333333;
+}
+
+li a:hover{
+    text-decoration: underline gray;
+    color: gray;
+}
+
+#logo{
+    width: 600px;
+}
+
+main div{
+    display: flex;
+    justify-content: center;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+}
+
+#buscar{
+    width: 600px;
+    height: 45px;
+    margin-top: -70px;
+    border-radius: 50px;
+    border: silver solid 1px;
+}
+
+#buscar:hover{
+    box-shadow: 1px 1px 1px 2px silver;
+}
+
+#boton1,
+#boton2{
+    margin: 2%;
+}
+
+.boton_input{
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    color: #333333;
+}
+
+#boton1:hover,
+#boton2:hover{
+    border: 1px solid gray;
+}
+
+footer{
+    background-color: #e6e6e6;
+    color: #4d4d4d;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+
+.pais{
+    border: 1px solid #d9d9d9;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.others{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.left ul,
+.right ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.left ul li,
+.right ul li{
+    margin-left: 20px;
+}
+
+.right ul li{
+    margin-right: 20px;
+}
+
+.left ul li:first-child{
+    margin-left: -20px;
+}

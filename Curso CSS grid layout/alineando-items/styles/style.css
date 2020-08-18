@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    height: 100vh; /*view port heigth*/
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+
+    justify-items: center; /*Alineado horizontal*/
+    align-items: center; /*Alineado vertical*/
+}
+
+.item{
+    border: 1px red solid;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.item:nth-child(5){
+    align-self: start;
+    justify-self: start;
+}

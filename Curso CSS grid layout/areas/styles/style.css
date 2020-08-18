@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template: 25% 50% 25%  / 25% 75%; /*!filas,columnas*/
+    gap: 25px , 0px; /*filas,columnas*/
+    height: 100vh; /*view port heigth*/
+
+    grid-template-areas: 
+    "header header"
+    "left contenido"
+    "footer footer";
+}
+
+.item{
+    border: 1px red solid;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.item:nth-of-type(4){
+    background-color: lightgreen;
+}
+
+.header{
+    grid-area: header;
+}
+
+.left{
+    grid-area: left;
+}
+
+.contenido{
+    grid-area: contenido;
+}
+
+.footer{
+    grid-area: footer;
+}

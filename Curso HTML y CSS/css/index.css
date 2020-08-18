@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*Variables en css*/
+:root{ /*Así va a estar accesible para todas las clases*/
+    --green-color:#7acc2d;
+    --white-color:white;
+    --black-color:#313337;
+    
+    /*Espaciado*/
+    --space:10px;
+
+    /*Tipografía*/
+    --normal:12px;
+
+    /*Box shadow*/
+    --box:0 0 2px 1px #e6e5e9;
+}
+/*Variables en css*/
+
+html,body{
+    padding: 0;
+    margin: 0;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, label{
+    font-size: var(--normal);
+}
+
+
+nav{
+    display: flex;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--white-color);
+}
+
+/*--------------------------- Main section*/
+
+.main_section{
+    padding: 15%;
+    text-align: center;
+}
+
+.fadeInDown{
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s; /Define la duración de la animación/
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; /Se van a cumplir los key frames tanto de ida como de regreso/
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    }
+
+.products{
+    background-image: url("../images/curve.png");
+    height: 50px;
+    background-size: cover; /*Ocupa el tamaño del div que tiene*/
+    background-position: center top;
+    padding: 20%;
+    display: flex;
+}
+
+.product{
+    padding: var(--space);
+    margin-top: -240px;
+}
+
+.product .content{
+    background-color: var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+
+.img_content{
+    text-align: center;
+}
+
+.main_button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: 17px;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_button:hover{
+    background-color: #5e9e22;
+}
+
+.cute{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15%;
+}
+.cute_advantages{
+    width: 200px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.cute_advantages img{
+    width: 200px;
+}
+
+.cute_advantages h3{
+    text-align: center;
+}
+
+.menciones{
+    display: flex;
+    flex-direction: row;
+}
+
+.menciones h2{
+    margin: auto;
+}
+
+#tituloTesti{
+    text-align: center;
+}
+
+.testimonios{
+    box-shadow: 0 0 2px #e6e5e9;
+    margin: 5px;
+    text-align: center;
+}
+
+.testimonios img{
+    width: 200px;
+}
+
+#tituloTesti{
+    border-top: black 1px solid;
+}
+
+/*-----------------------------------------------Venta*/
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+
+.modulo_pago_imagenes{
+    max-width: 100px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.modulo_pago_imagenes img{
+    max-width: 100px;
+}
+
+.data{
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box; /*Va a ver desde toma referencia el 100% de ancho*/
+}
+
+.modulo_pago .main_button{
+    margin-top: 10px;
+}
+
+/*--------------------------------------------footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color:white;
+    justify-content: space-between;
+}
+
+.contact a{
+    color: var(--green-color);
+    text-decoration: none;
+}
+
+.option{
+    margin: 1%;
+}

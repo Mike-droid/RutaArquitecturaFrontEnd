@@ -1,0 +1,17 @@
+/*Sidebar*/
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    background: var(--darkColor);
+    color: white;
+    padding: 1em;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: auto;
+}
+
+
+.sidebarPlaylist {
+    overflow: auto;
+}

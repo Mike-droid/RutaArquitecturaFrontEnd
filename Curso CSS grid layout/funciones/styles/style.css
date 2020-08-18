@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    /*grid-template-columns: 33.33% 33.33% 33.33%;/*!Grid con tres columnas*/
+    /*grid-template-rows: 300px 150px; !modificando 2 filas de grid*/
+    /*grid-template: 25% 75% 25% 25%  / repeat(4,1fr); /*!funciones en css*/
+    /*grid-template: 50% 25% 25%  / repeat(4,minmax(200px,1fr)); /*!funciones en css*/
+    grid-template: 50% 25% 25%  / minmax(200px,1fr) 1fr 1fr 1fr; /*!funciones en css*/
+    gap: 40px 70px; /*filas,columnas*/
+}
+
+.item{
+    border: 1px red solid;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.item:nth-of-type(4){
+    background-color: lightgreen;
+    overflow: auto;
+    display: grid;
+    grid-template: 50% 50%  / 33% 33% 33%;
+}
+
+.item .item{
+    background-color: yellow;
+}

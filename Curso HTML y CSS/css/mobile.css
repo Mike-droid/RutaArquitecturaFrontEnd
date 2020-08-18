@@ -1,0 +1,15 @@
+@media (max-width:600px){ /*Por debajo de los 600px active todas las reglas que tiene*/
+    .products{
+        display: inherit;
+        height: auto;
+    }
+    .product{
+        margin-top: auto;
+    }
+    .main-section{
+        padding: 4%;
+    }
+    .cute, .menciones{
+        display: inherit;
+    }
+}

@@ -1,0 +1,292 @@
+/*
+reglas - conjunto de instrucciones
+selectores - manera de identificar los elementos html
+declaraciones - todo lo que hacemos con el selector
+propiedades - cosas particulares que podemos hacer con los elementos
+valores - cosas que esperan recibir como variables
+*/
+/*
+body{
+    background-color: red;
+}
+
+header{
+    background-color: burlywood;
+}
+*/
+/*Selector de etiqueta*/
+/*Selector descendente - hijo de algún otro elemento*/
+/*body header div nav ol li a{
+
+}*/
+
+/*selector de id # y de clase . */
+
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Righteous', cursive;
+    font-weight: normal; /*bold = 600*/
+    font-style: italic;
+}
+
+h1{
+    line-height: 1.5em;
+    font-size: 40px;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    /*text-transform: uppercase;
+    text-decoration: overline;*/
+}
+
+h1 strong{
+    color: blue;
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero{
+    height:300px;
+    background-image: url(desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/hero.jpg);
+    background-color: #1b2127;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    display: flex;
+    align-items: center;
+}
+
+.project-details{
+    width: 300px;
+}
+
+.project-imageContainer{
+    width: 300px;
+}
+
+.portfolio{
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.header{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.project-title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project{
+    border: 1px solid gray;
+    border-radius: 10px;
+    /*border-top-right-radius: 20%;*/
+    margin-bottom: 15px;
+    padding: 20px;
+    background-color: white;
+    /*box-sizing: border-box; /*Sirve para especificar que no salga de la medida que definimos en width y height*/
+    /*display: inline-block;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.project-course,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+
+.project-description{
+    font-size: 20px;
+    width: 500px;
+}
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+.menu{
+    height: inherit;
+}
+
+.pie{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pie img{
+    vertical-align: middle;
+}
+
+.pie a{
+    color: white;
+}
+
+.evento{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.event{
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff;
+}
+
+.event img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 1px solid #056fff;
+    padding:  5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
+
+.event-list-title{
+    margin-left: 20px;
+}
+
+.contacto{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.twitter{
+    background-image: url(desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/twitter.svg);
+    
+}
+
+.social-link.facebook{
+    background-image: url(desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/facebook.svg);
+}
+
+.social-link.github{
+    background-image: url(desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/github.svg);
+}
+
+.social-link.instagram{
+    background-image: url(desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/instagram.svg);
+}
+
+.form-email input{
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    padding:  5px 20px 5px 25px;
+    background-image: url(desarrollo-web-portafolio-9af19a0a0fcd9fb6a66c3831cca6aaebf3328762/images/envelope.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+/*Display block inserta elementos debajo
+Display inline pone elementos a un costado del otro*/
+
+/*
+.flexbox{
+    display: flex;
+    flex-wrap: wrap; /*los elementos se ajustan al ancho de la pantalla*/
+    /*justify-content: space-around; /*alinear horizontalmente*/
+    /*height: 400px;
+    align-items: center; /*alinear verticalmente*/
+    /*border: 1px solid blue;
+    flex-direction: column;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    /*margin: 10px;*/
+    /*border: 1px solid red;
+    flex-shrink: 0; /*los elementos no pierden su tamaño*/
+/*}*/
