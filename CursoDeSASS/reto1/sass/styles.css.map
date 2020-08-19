@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": ";ACAA,kCAAkC;ACElC,AAAA,OAAO,CAAC;ECDJ,SAAS,EF8BC,KAAK;EE7Bf,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;EDCjB,gBAAgB,EAAE,IAAI;EACtB,kBAAkB;EAKlB,gBAAgB,EDAP,OAAO;ECChB,OAAO,EDmBF,IAAI;CClBZ;;ACLG,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EDL5C,AAAA,OAAO,CAAC;IAKA,gBAAgB,EAAE,GAAG;IACrB,mBAAmB;GAI1B;;;AAED,AAAA,gBAAgB,CAAA;ECbZ,SAAS,EDcS,GAAG;ECbrB,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;CDapB;;AAED,AAAA,MAAM,CAAA;EACF,gBAAgB,EDdN,OAAO;CCepB;;AGpBD,AAAA,IAAI,CAAA;EACA,OAAO,EAAC,YAAY;EACpB,KAAK,EJSK,KAAgB;EIR1B,gBAAgB,EJEN,OAAO;EIDjB,WAAW,EAAE,GAAG;EAChB,aAAa,EJwBD,GAAG;EIvBf,SAAS,EJoBI,IAAmB;CIfnC;;AAHI,AAAD,UAAO,CAAA;EACH,SAAS,EAAE,IAAI;CAClB;;AAGD,AAAA,UAAU,CAAA;EACN,gBAAgB,EJEX,OAAe;CIDvB;;AIfL,AAAA,KAAK,CAAC,EAAE,AAAA,MAAM,CAAA;EACV,gBAAgB,ERKF,OAAkB;CQJnC;;ATMD,6BAA6B",
+    "sources": [
+        "styles.scss",
+        "_variables.scss",
+        "_layout.scss",
+        "_mixins.scss",
+        "_mixins.scss",
+        "_botones.scss",
+        "_links.scss",
+        "_tipografia.scss",
+        "_grids.scss",
+        "_tablas.scss",
+        "_utilidades.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

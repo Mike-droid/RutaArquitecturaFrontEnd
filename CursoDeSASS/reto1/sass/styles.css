@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*---------- $COLORS -----------*/
+section {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: blue;
+  /*Antes era blue*/
+  background-color: #bfbfbf;
+  padding: 24px;
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    background-color: red;
+    /*En 800px es red*/
+  }
+}
+
+.max-width--huge {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  background-color: #ea83ee;
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: #ea83ee;
+  line-height: 2.5;
+  border-radius: 3px;
+  font-size: 24px;
+}
+
+.btn__icon {
+  font-size: .6em;
+}
+
+.btn--info {
+  background-color: #4268dd;
+}
+
+table tr:hover {
+  background-color: #dbd879;
+}
+
+/*Este siempre va de último*/
+/*# sourceMappingURL=styles.css.map */

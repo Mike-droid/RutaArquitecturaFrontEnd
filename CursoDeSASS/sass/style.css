@@ -1,0 +1,87 @@
+/*-------------------------------
+    $COLORS
+--------------------------------*/
+/*
+!Branding Colors
+*/
+table tr:hover {
+  background-color: #effe2e;
+}
+
+body {
+  background-color: #2f38a1;
+}
+
+.header {
+  border-bottom: 2px solid;
+  border-bottom-color: #4b6c7d;
+}
+
+.header .header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 1.1em;
+}
+
+.header .header__ul .header__li:hover {
+  color: #28c375;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main__h1 {
+  font-size: 5em;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__h1 .h1__span {
+  color: #effe2e;
+}
+
+.main__button {
+  width: 30%;
+  height: 80px;
+  font-size: 2em;
+  border-radius: 30px;
+  color: #ffffff;
+  background: #d3de0f;
+  background: -webkit-gradient(linear, left top, right top, from(#d3de0f), color-stop(15%, #cce30e), to(#06db89));
+  background: linear-gradient(90deg, #d3de0f 0%, #cce30e 15%, #06db89 100%);
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+
+.main__button:hover {
+  cursor: pointer;
+  width: 40%;
+}
+/*# sourceMappingURL=style.css.map */

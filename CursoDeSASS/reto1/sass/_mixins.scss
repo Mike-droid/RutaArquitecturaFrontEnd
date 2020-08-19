@@ -1,0 +1,11 @@
+@mixin maxWidth ($maxwidth:$pageMaxWidth) {
+    max-width: $maxwidth;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin respond-to($width) {
+    @media only screen and (min-width: $width){
+        @content;
+    }
+}

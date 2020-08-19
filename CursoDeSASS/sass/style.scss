@@ -1,0 +1,63 @@
+@import "_variables";
+@import "_tablas";
+
+body{
+    background-color: $color-brand;
+}
+
+.header{
+    border-bottom: 2px solid;
+    border-bottom-color: $color-header-bottom;
+}
+
+.header .header__ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: $font-header;
+    color:$white;
+    font-size: 1.1em;
+}
+
+.header .header__ul .header__li:hover{
+    color: $color-hover;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .main__h1{
+    font-size: 5em;
+    color:$white;
+    font-family: $font-header;
+}
+
+.main__h1 .h1__span{
+    color:$color-secondary;
+}
+
+.main__button{
+    width: 30%;
+    height: 80px;
+    font-size: 2em;
+    border-radius: 30px;
+    color:$white;
+    background: rgb(211,222,15);
+    background: linear-gradient(90deg, rgba(211,222,15,1) 0%, rgba(204,227,14,1) 15%, rgba(6,219,137,1) 100%);
+    border:none;
+    font-family: $font-header;
+    transition: width 1s;
+}
+
+.main__button:hover{
+    cursor: pointer;
+    width: 40%;
+}

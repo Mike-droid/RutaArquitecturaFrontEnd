@@ -1,0 +1,21 @@
+@import "mixins";
+
+section {
+    @include maxWidth;
+    background-color: blue;
+    /*Antes era blue*/
+    @include respond-to(800px){
+        background-color: red;
+        /*En 800px es red*/
+    }
+    background-color: $color-grey;
+    padding: $padding;
+}
+
+.max-width--huge{
+    @include maxWidth(80%);
+}
+
+header{
+    background-color: $color-brand;
+}
