@@ -1,0 +1,15 @@
+$fs : (
+    big:24px,
+    normal:16px,
+    small:14px,
+    x-small:12px
+);
+
+p {
+    font-size: map-get($fs , normal );
+}
+
+small{
+    color:grey;
+    font-size: map-get($fs , x-small );
+}

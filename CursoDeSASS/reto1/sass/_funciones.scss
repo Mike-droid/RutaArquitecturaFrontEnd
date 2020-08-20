@@ -1,0 +1,46 @@
+@function suma($numero-uno, $numero-dos){
+    @return $numero-uno + $numero-dos;
+}
+
+$indicesZ : (
+    zindex-dropdown:100,
+    zindex-sticky:120,
+    zindex-modal:140,
+    zindex-overlay:160,
+    zindex-tooltip:180
+);
+
+@function indicesZ($capa){
+    @return map-get($indicesZ , $capa);
+}
+
+/*Esto es lo que crea el @each*/
+
+$font-weights: normal bold italic;
+
+@each $font in $font-weights {
+    .#{$font} {font-weight: $font;}
+}
+/*Esto es lo que crea el @each*/
+
+/*FOR EACH*/
+@for $i from 1 to 5 {
+    .class-#{$i}{
+        &::before{
+            content: "#{$i}";
+        }
+    }
+}
+
+$background-color-black: black;
+
+@if $background-color-black == black {
+    p{
+        color:white;
+    }
+}
+@else{
+    p{
+        color:red;
+    }
+}
