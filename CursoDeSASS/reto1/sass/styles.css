@@ -27,6 +27,41 @@ header {
   background-color: #ea83ee;
 }
 
+/*Esto es lo que crea el @each*/
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-weight: italic;
+}
+
+/*Esto es lo que crea el @each*/
+/*FOR EACH*/
+.class-1::before {
+  content: "1";
+}
+
+.class-2::before {
+  content: "2";
+}
+
+.class-3::before {
+  content: "3";
+}
+
+.class-4::before {
+  content: "4";
+}
+
+p {
+  color: white;
+}
+
 .btn {
   display: inline-block;
   color: white;
@@ -34,6 +69,7 @@ header {
   line-height: 2.5;
   border-radius: 3px;
   font-size: 24px;
+  padding: 15px;
 }
 
 .btn__icon {
@@ -46,6 +82,50 @@ header {
 
 table tr:hover {
   background-color: #dbd879;
+}
+
+/*Esto es lo que crea el @each*/
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-weight: italic;
+}
+
+/*Esto es lo que crea el @each*/
+/*FOR EACH*/
+.class-1::before {
+  content: "1";
+}
+
+.class-2::before {
+  content: "2";
+}
+
+.class-3::before {
+  content: "3";
+}
+
+.class-4::before {
+  content: "4";
+}
+
+p {
+  color: white;
+}
+
+p {
+  font-size: 16px;
+}
+
+small {
+  color: grey;
+  font-size: 12px;
 }
 
 /*Este siempre va de último*/
