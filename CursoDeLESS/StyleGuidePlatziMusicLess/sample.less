@@ -1,0 +1,29 @@
+@import "_variables.less";
+
+@color: desaturate(#f00, 80%);
+@color2: saturate(#aac, 40%);
+
+p{
+    color: @color;
+}
+
+.p{
+    color: @color2;
+}
+
+.responsive(@size) when (@size =< 1024px){
+    width: 100%;
+}
+
+.responsive(@size) when (@size>1024px){
+    width: calc(50% - 12px);
+    margin-right: 12px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.article{
+    .responsive(1200px);
+    color: @color-brand;
+}

@@ -1,0 +1,15 @@
+/*Contantes*/
+p {
+  color: #996666;
+}
+.p {
+  color: #8f8fe7;
+}
+.article {
+  width: calc(50% - 12px);
+  margin-right: 12px;
+  color: #ea83ee;
+}
+.article:last-child {
+  margin-right: 0;
+}

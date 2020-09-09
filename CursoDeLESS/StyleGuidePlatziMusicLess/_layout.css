@@ -1,0 +1,12 @@
+/*Contantes*/
+.container {
+  padding: 24px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container--landing {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

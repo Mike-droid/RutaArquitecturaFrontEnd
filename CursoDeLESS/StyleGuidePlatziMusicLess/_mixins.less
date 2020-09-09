@@ -1,0 +1,19 @@
+@import "_variables.less";
+
+.max-width(@max-width: @page-max-width){
+    max-width: @max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.responsive(@size) when (@size =< @page-max-width){
+    width: 100%;
+}
+
+.responsive(@size) when (@size> @page-max-width){
+    width: calc(50% - 12px);
+    margin-right: 12px;
+    &:last-child{
+        margin-right: 0;
+    }
+}

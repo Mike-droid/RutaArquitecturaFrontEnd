@@ -1,0 +1,60 @@
+/*Contantes*/
+.article {
+  width: calc(50% - 12px);
+  margin-right: 12px;
+  color: #ea83ee;
+}
+.article:last-child {
+  margin-right: 0;
+}
+html {
+  font-size: 87.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5;
+  color: #cccccc;
+}
+p {
+  color: #ea83ee;
+  font-size: 2rem;
+}
+h1 {
+  color: #dbd879;
+}
+.btn {
+  display: inline-block;
+  line-height: 2.2;
+  color: #ffffff;
+  background-color: #ea83ee;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.btn:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.btn--alert {
+  background-color: #d20000;
+}
+.container {
+  padding: 24px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container--landing {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
