@@ -1,0 +1,108 @@
+//! @import no funciona con mi extensión de vs code :(
+
+/*Variables llevan '=' */
+font-size-normal = 16px
+font-size-small = 14px
+font-size-paragraph = font-size-normal
+page-max-width = 1024px
+padding = 24px
+miniPadding = padding / 2
+
+.pseudoElemento
+    font-size font-size-normal
+    width 300px
+    &:before
+        content "hola"
+    .ie-8 &
+        &:before
+            content "ciao"
+/*Intenta no tener más de 3 indentaciones*/
+
+body, .redText
+    color red
+    text-decoration underline
+    > .primerHijo
+        margin-bottom 24px
+        font-size font-size-small
+
+.btn
+    background-color pink
+    border-radius 2px
+    &--alert
+        background-color red
+
+p
+    font-size font-size-paragraph
+
+
+/*Mixins*/
+mixin-max-width(width = page-max-width)
+    max-width width
+    margin-left auto
+    margin-right auto
+
+.container
+    mixin-max-width(800px)
+
+.section
+    margin-bottom 24px
+    mixin-max-width(90%)
+
+.section--landing
+    mixin-max-width()
+
+
+mixin-padding-small(a,b)
+    a + b
+
+body
+    padding mixin-padding-small(10px,8px)
+
+
+mixin-box(x,y, margin-only = true)
+    if margin-only
+        margin x y
+    else 
+        padding x y
+
+.div
+    mixin-box(5px,10px, true)
+
+mixin-tone(dark = true)
+    if dark
+        color white
+        background-color black
+    else 
+        color black
+        background-color white
+
+.div
+    mixin-tone(false)
+
+
+/*Bucle for en stylus*/
+gridSize = (1..12)
+
+.grid
+    display flex
+    flex-wrap wrap
+    position relative
+    justify-content flex-start
+    flex-direction row
+
+[class^="grid-item"]
+    flex-shrink 0
+    margin-right 12px
+    flex-grow 1
+
+for i in gridSize 
+    .grid-item-{i}
+        width (100/i) * 1%
+
+alumnos= (0..8)
+for i in alumnos    
+    .nota-{i}
+    .nota-{i}        
+        &:after
+        &:after            
+            content: \"i\"
