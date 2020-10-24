@@ -1,0 +1,50 @@
+#header{
+    border-top: 6px solid black;
+}
+
+#header a{
+    color: black;
+}
+
+hr{
+    border: 1px dotted silver;
+}
+
+.button{
+    text-transform: uppercase;
+}
+
+/*.cell img{
+    width: 30%;
+}*/
+
+a:hover{
+    color: #c00;
+}
+
+.product{
+    position: relative;
+}
+
+.new{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.promo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: black;
+}
+
+.promo i{
+    float: right;
+}
+
+.product:hover .promo{
+    display: block;
+}
