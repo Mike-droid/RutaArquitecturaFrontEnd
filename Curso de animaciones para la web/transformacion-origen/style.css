@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    border: 1px solid red;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*!Es buena práctica poner un elemento con su padre y que la animación en hover sea al padre y no al hijo*/
+.container:hover .cuadrado{
+    /*transform: rotateX(45deg);*/
+    /*transform: rotateY(45deg);*/
+    transform: rotateZ(55deg);
+}
+
+.cuadrado{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #7dc900;
+    margin: 20px;
+    /*transform-origin: top;*/
+    /*transform-origin: left;*/
+    /*transform-origin: left top;*/
+    transform-origin: 25% 25%;
+    transition: .3s;
+}

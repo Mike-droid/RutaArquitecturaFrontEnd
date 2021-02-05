@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    display: inline;
+}
+
+p, span{
+    animation-name: separar;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes separar{
+    from{
+        font-size: 12px;
+    }
+    to{
+        font-size: 80px;
+    }
+}

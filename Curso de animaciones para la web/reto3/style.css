@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.bitcoin{
+    width: 700px;
+    height: 700px;
+}
+
+.coin{
+    width: 500px;
+    height: 500px;
+}
+
+.b{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border-color: #ffd633;
+    color: #ffff00;
+    background-color: #ffd633;
+}
+
+.bitcoin, .coin, .b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+}
+
+.btn{
+    background-color: white;
+    color: blue;
+    border: 1px solid black;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 10px;
+}

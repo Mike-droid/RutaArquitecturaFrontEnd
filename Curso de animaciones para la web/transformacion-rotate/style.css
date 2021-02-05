@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    perspective: 500px;
+    perspective-origin: center;
+    /*perspective-origin: right;*/
+    /*perspective-origin: top right;*/
+}
+
+.container{
+    border: 1px solid red;
+}
+
+/*!Es buena práctica poner un elemento con su padre y que la animación en hover sea al padre y no al hijo*/
+.container:hover .cuadrado{
+    /*transform: rotate(45deg);*/
+    /*transform: rotate(-4545deg);*/
+    /*transform: rotateX(45deg);*/
+    /*transform: rotateY(45deg);*/
+    /*transform: rotateZ(45deg);*/
+    /*transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);*/
+    /*transform:rotate3d(1,1,1,45deg) /*!Efecto X,Y y Z*/
+    /*transform: translate(100px);*/
+    /*transform: translate(-100px , -100px);*/
+    /*transform: translateZ(200px);*/
+    transform: translate3d(-100px, -100px, -250px);
+}
+
+.cuadrado{
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #7dc900;
+    margin: 20px;
+    transition: .3s;
+}
