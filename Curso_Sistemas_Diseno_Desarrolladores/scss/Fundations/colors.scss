@@ -1,0 +1,33 @@
+@import "../tokens/colors.scss";
+
+@mixin constructor($color) {
+    color:$color;
+    &_background{
+        background-color: $color;
+    }
+}
+
+//Brand colors
+.white-brand{
+    @include constructor($white_brand)
+}
+
+.green_brand{
+    @include constructor($green_brand);
+}
+
+.primary_action{
+    @include constructor($primary_action);
+}
+
+.secondary_action{
+    @include constructor($secondary_action);
+}
+
+.positive{
+    @include constructor($positive);
+}
+
+.negative{
+    @include constructor($negative);
+}

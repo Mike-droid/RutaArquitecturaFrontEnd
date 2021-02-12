@@ -1,0 +1,48 @@
+.white-brand {
+  color: #FFFFFF;
+}
+
+.white-brand_background {
+  background-color: #FFFFFF;
+}
+
+.green_brand {
+  color: #98CA3D;
+}
+
+.green_brand_background {
+  background-color: #98CA3D;
+}
+
+.primary_action {
+  color: #ABE542;
+}
+
+.primary_action_background {
+  background-color: #ABE542;
+}
+
+.secondary_action {
+  color: #8F97A2;
+}
+
+.secondary_action_background {
+  background-color: #8F97A2;
+}
+
+.positive {
+  color: #15FF93;
+}
+
+.positive_background {
+  background-color: #15FF93;
+}
+
+.negative {
+  color: #F04F8D;
+}
+
+.negative_background {
+  background-color: #F04F8D;
+}
+/*# sourceMappingURL=colors.css.map */

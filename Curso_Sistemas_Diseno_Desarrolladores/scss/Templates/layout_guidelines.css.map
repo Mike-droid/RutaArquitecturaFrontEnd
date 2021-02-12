@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACEA,OAAO,CAAC,gGAAI;ADEZ,AAAA,QAAQ,CAAA;EACJ,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,QAAQ,CAAA;EACJ,KAAK,EAAE,KAAK;EACZ,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,MAAM,EAAE,KAAK;EACb,OAAO,EAAE,GAAG;EACZ,gBAAgB,EEAN,OAAO;CFCpB",
+    "sources": [
+        "layout_guidelines.scss",
+        "../tokens/typo.scss",
+        "../tokens/colors.scss",
+        "../tokens/spacing.scss"
+    ],
+    "names": [],
+    "file": "layout_guidelines.css"
+}
