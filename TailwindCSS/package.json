@@ -1,0 +1,23 @@
+{
+  "name": "TailwindCSS",
+  "version": "1.0.0",
+  "description": "Librería que tiene un enfoque de Utility first, mobile first.",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css\\tailwind.css -o public\\css\\style.css",
+    "dev": "postcss css\\tailwind.css -o public\\css\\style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.0",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.6"
+  }
+}
